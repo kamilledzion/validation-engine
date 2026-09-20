@@ -2,3 +2,5 @@
 .gradle/
 .idea/
 build/
+test-agent/validation-output/
+validation-output/
