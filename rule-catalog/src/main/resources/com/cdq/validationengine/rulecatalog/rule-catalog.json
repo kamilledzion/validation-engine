@@ -1,0 +1,46 @@
+[
+  {
+    "id": "countryBlocked",
+    "label": "Country is allowed",
+    "status": "RELEASED",
+    "severity": "ERROR",
+    "countryScope": "WORLD",
+    "categories": [
+      "FORMAT"
+    ],
+    "decisions": {
+      "BLOCKED": "INVALID"
+    },
+    "defaultDecision": "NOT_APPLICABLE"
+  },
+  {
+    "id": "vatFormat",
+    "label": "VAT format is correct",
+    "status": "RELEASED",
+    "severity": "ERROR",
+    "countryScope": "WORLD",
+    "categories": [
+      "FORMAT"
+    ],
+    "decisions": {
+      "OK": "VALID",
+      "BAD": "INVALID"
+    },
+    "defaultDecision": "REVIEW"
+  },
+  {
+    "id": "ibanFormat",
+    "label": "IBAN format is correct",
+    "status": "RELEASED",
+    "severity": "ERROR",
+    "countryScope": "WORLD",
+    "categories": [
+      "FORMAT"
+    ],
+    "decisions": {
+      "OK": "VALID",
+      "BAD": "INVALID"
+    },
+    "defaultDecision": "REVIEW"
+  }
+]

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.cdq.validationengine.core.RecordContextTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-09-20T13:13:19.441Z" hostname="Kamils-MacBook-Pro.local" time="0.04">
+  <properties/>
+  <testcase name="shouldUseFallbackIdWhenRecordIdIsMissing()" classname="com.cdq.validationengine.core.RecordContextTest" time="0.027"/>
+  <testcase name="shouldReadFieldOnlyOnceWhenIsRequestedAgain()" classname="com.cdq.validationengine.core.RecordContextTest" time="0.004"/>
+  <testcase name="shouldThrowExceptionWhenFieldIsNotString()" classname="com.cdq.validationengine.core.RecordContextTest" time="0.001"/>
+  <testcase name="shouldReadNullAndEmptyFields()" classname="com.cdq.validationengine.core.RecordContextTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

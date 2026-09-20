@@ -1,0 +1,12 @@
+dependencies {
+    api project(':core')
+
+    testImplementation platform("org.junit:junit-bom:${junitVersion}")
+    testImplementation "org.assertj:assertj-core:${assertjVersion}"
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+}
+
+test {
+    useJUnitPlatform()
+}

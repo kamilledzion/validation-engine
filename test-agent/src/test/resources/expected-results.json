@@ -1,0 +1,94 @@
+[
+  {
+    "recordId": "r1",
+    "ruleId": "vatFormat",
+    "severity": "ERROR",
+    "computedValue": "OK",
+    "decision": "VALID",
+    "fieldsRead": {
+      "vatId": "DE111111111"
+    }
+  },
+  {
+    "recordId": "r1",
+    "ruleId": "countryBlocked",
+    "severity": "ERROR",
+    "computedValue": "OK",
+    "decision": "NOT_APPLICABLE",
+    "fieldsRead": {
+      "country": "DE"
+    }
+  },
+  {
+    "recordId": "r1",
+    "ruleId": "ibanFormat",
+    "severity": "ERROR",
+    "computedValue": "OK",
+    "decision": "VALID",
+    "fieldsRead": {
+      "iban": "DE123456789",
+      "country": "DE"
+    }
+  },
+  {
+    "recordId": "r2",
+    "ruleId": "vatFormat",
+    "severity": "ERROR",
+    "computedValue": "BAD",
+    "decision": "INVALID",
+    "fieldsRead": {
+      "vatId": "FR22"
+    }
+  },
+  {
+    "recordId": "r2",
+    "ruleId": "countryBlocked",
+    "severity": "ERROR",
+    "computedValue": "OK",
+    "decision": "NOT_APPLICABLE",
+    "fieldsRead": {
+      "country": "FR"
+    }
+  },
+  {
+    "recordId": "r2",
+    "ruleId": "ibanFormat",
+    "severity": "ERROR",
+    "computedValue": "OK",
+    "decision": "VALID",
+    "fieldsRead": {
+      "iban": "FR123456789",
+      "country": "FR"
+    }
+  },
+  {
+    "recordId": "r3",
+    "ruleId": "vatFormat",
+    "severity": "ERROR",
+    "computedValue": "BAD",
+    "decision": "INVALID",
+    "fieldsRead": {
+      "vatId": null
+    }
+  },
+  {
+    "recordId": "r3",
+    "ruleId": "countryBlocked",
+    "severity": "ERROR",
+    "computedValue": "BLOCKED",
+    "decision": "INVALID",
+    "fieldsRead": {
+      "country": "ZZ"
+    }
+  },
+  {
+    "recordId": "r3",
+    "ruleId": "ibanFormat",
+    "severity": "ERROR",
+    "computedValue": "BAD",
+    "decision": "INVALID",
+    "fieldsRead": {
+      "iban": ""
+    }
+  }
+]

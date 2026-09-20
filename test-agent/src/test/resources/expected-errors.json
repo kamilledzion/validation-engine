@@ -1,0 +1,29 @@
+[
+  {
+    "recordId": "r4",
+    "ruleId": "vatFormat",
+    "errorType": "IllegalArgumentException",
+    "message": "Expected a string for field vatId",
+    "fieldsRead": {
+      "vatId": 123
+    }
+  },
+  {
+    "recordId": "r4",
+    "ruleId": "countryBlocked",
+    "errorType": "IllegalArgumentException",
+    "message": "Expected a string for field country",
+    "fieldsRead": {
+      "country": 456
+    }
+  },
+  {
+    "recordId": "r4",
+    "ruleId": "ibanFormat",
+    "errorType": "IllegalArgumentException",
+    "message": "Expected a string for field iban",
+    "fieldsRead": {
+      "iban": 789
+    }
+  }
+]

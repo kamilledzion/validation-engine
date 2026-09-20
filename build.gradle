@@ -1,0 +1,49 @@
+plugins {
+    id 'base'
+}
+
+ext {
+    junitVersion = '5.11.4'
+    assertjVersion = '3.27.6'
+    jacksonVersion = '3.2.0'
+    javalinVersion = '7.2.3'
+    slf4jVersion = '2.0.18'
+}
+
+allprojects {
+    group = 'com.cdq.validationengine'
+    version = '0.1.0-SNAPSHOT'
+}
+
+subprojects {
+    apply plugin: 'java-library'
+
+    repositories {
+        mavenCentral()
+    }
+
+    java {
+        toolchain {
+            languageVersion = JavaLanguageVersion.of(25)
+        }
+        withSourcesJar()
+        withJavadocJar()
+    }
+
+    tasks.withType(JavaCompile).configureEach {
+        options.encoding = 'UTF-8'
+    }
+}
+
+configure([project(':api'), project(':core'), project(':rule-catalog'), project(':json-adapter'), project(':engine')]) {
+    apply plugin: 'maven-publish'
+
+    publishing {
+        publications {
+            mavenJava(MavenPublication) {
+                from components.java
+                artifactId = project.name == 'engine' ? 'validation-engine' : project.name
+            }
+        }
+    }
+}

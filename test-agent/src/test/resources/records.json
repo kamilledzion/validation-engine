@@ -1,0 +1,29 @@
+[
+  {
+    "id": "r1",
+    "vatId": "DE111111111",
+    "country": "DE",
+    "legalName": "ACME GmbH",
+    "iban": "DE123456789"
+  },
+  {
+    "id": "r2",
+    "vatId": "FR22",
+    "country": "FR",
+    "legalName": "Bricolage SARL",
+    "iban": "FR123456789"
+  },
+  {
+    "id": "r3",
+    "country": "ZZ",
+    "legalName": "Nowhere Ltd",
+    "iban": ""
+  },
+  {
+    "id": "r4",
+    "vatId": 123,
+    "country": 456,
+    "legalName": "Three Rule Errors: country, vatId, iban are numeric",
+    "iban": 789
+  }
+]

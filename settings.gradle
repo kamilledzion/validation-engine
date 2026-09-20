@@ -1,0 +1,3 @@
+rootProject.name = 'validation-engine'
+
+include 'api', 'core', 'rule-catalog', 'json-adapter', 'engine', 'test-agent'
