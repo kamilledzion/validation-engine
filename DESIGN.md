@@ -56,7 +56,7 @@ ValidationSummary validate(
 2. Gets the Java rule registry from `RuleCatalog.defaults()`.
 3. Creates a `JsonRecordReader` and `ValidationEngine`.
 
-The mapping resource is [rule-catalog.json](rule-catalog/src/main/resources/com/cdq/validationengine/rulecatalog/rule-catalog.json). It is loaded from the rule-catalog module. Unknown JSON properties are rejected. A missing resource raises `IOException`.
+The mapping resource is [rule-catalog.json](rule-catalog/src/main/resources/rule-catalog.json). It is loaded from the rule-catalog module. Unknown JSON properties are rejected. A missing resource raises `IOException`.
 
 The custom `JsonValidator` constructor is package-private. Consumers use the predefined catalog through the factory. A public custom-rule API is future work. The engine matches mappings to rules by ID. Duplicate mappings can fail construction. A missing implementation can fail when that rule is evaluated.
 
